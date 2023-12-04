@@ -1,6 +1,6 @@
 **Prequisites**:
 https://github.com/charmbracelet/gum#installation
-
+-----
 **Steps**:
 
 1. Fork this repository under your GitHub organization with repository name as `idp-demo`.  You need to be organization admin of an org to run this demo.
@@ -17,6 +17,8 @@ The actual token needs to be created under user profile Developer settings with 
 3. Clone the forked repo on your local
 4. Authenticate Github CLI, run 'gh auth login' and follow the instructions.
 5. run ./setup.sh
+
+-----
 
 
 **Deployed tools**
