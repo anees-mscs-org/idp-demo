@@ -2,6 +2,7 @@
 
 https://github.com/charmbracelet/gum#installation
 
+
 -----
 **Steps**:
 
@@ -22,6 +23,17 @@ The actual token needs to be created under user profile Developer settings with 
 
 -----
 
+**Overview**:
+
+1. Creates an EKS cluster on AWS cloud
+2. Adds secrets to github organization under https://github.com/organizations/org-name/settings/secrets/actions (DOCKERHUB_TOKEN, DOCKERHUB_USER, ORG_ADMIN_TOKEN)
+3. Creates various namespace segregation on Kubernetes cluster.
+4. Installs crossplane, Traefik, port-k8s-exporter
+5. Sets up github actions
+6. ArgoCD deployment to monitor `apps` and `infra` folders of this repo. Any resource configs commited into these folders are picked up by argocd and relevants application deployment  or infrastructure changes are made on kubernetes and AWS cloud.
+7. Instructions to add port.io blueprints to create simple user interfaces for application developers
+
+-----
 
 **Deployed tools**
 1. Port UI - portal for application developers to use pre-configured infrastructure resources by the platfrom team.
