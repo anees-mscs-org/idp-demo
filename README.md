@@ -18,4 +18,14 @@ The actual token needs to be created under user profile Developer settings with 
 4. Authenticate Github CLI, run 'gh auth login' and follow the instructions.
 5. run ./setup.sh
 
-Deployed ArgoCD app will be available on `gitops.${INGRESS_HOST}.nip.io`, where INGRESS_HOST IP can be found in the `.env` file on local once setup is completed.
+
+**Deployed tools**
+1. Port UI - portal for application developers to use pre-configured infrastructure resources by the platfrom team.
+2. ArgoCD - portal for platform team to view deployed apps and infra resources. ArgoCD available on `gitops.${INGRESS_HOST}.nip.io`, where INGRESS_HOST IP can be found in the `.env` file on local once setup is completed.
+3. Interacting with k8s cluster - In the forked idp-demo folder, platform team can use `kubectl` to access k8s resources.
+```
+export AWS_ACCESS_KEY_ID=***
+export AWS_SECRET_ACCESS_KEY=***
+kubectl get namespaces
+```
+
